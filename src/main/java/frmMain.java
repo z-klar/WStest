@@ -103,7 +103,7 @@ public class frmMain {
      * @param args
      */
     public static void main(String[] args) {
-        JFrame frame = new JFrame("WebSocket Connection Test");
+        JFrame frame = new JFrame("*** WebSocket Connection Test ***");
         frame.setContentPane(new frmMain().mainPanel);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();
