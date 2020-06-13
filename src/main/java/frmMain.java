@@ -18,7 +18,6 @@ public class frmMain {
     private JPanel txData;
     private JTextField txData2;
     private JButton btnInit;
-    private JButton btnConnect;
     private JButton btnDisconnect;
     private JButton btnSendData;
     private JList<String> lbLog;
@@ -157,13 +156,8 @@ public class frmMain {
         btnInit = new JButton();
         Font btnInitFont = this.$$$getFont$$$(null, Font.BOLD, 12, btnInit.getFont());
         if (btnInitFont != null) btnInit.setFont(btnInitFont);
-        btnInit.setText("Init");
+        btnInit.setText("Connect");
         txData.add(btnInit, new GridConstraints(2, 1, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
-        btnConnect = new JButton();
-        Font btnConnectFont = this.$$$getFont$$$(null, Font.BOLD, 12, btnConnect.getFont());
-        if (btnConnectFont != null) btnConnect.setFont(btnConnectFont);
-        btnConnect.setText("Connect");
-        txData.add(btnConnect, new GridConstraints(2, 2, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         btnDisconnect = new JButton();
         Font btnDisconnectFont = this.$$$getFont$$$(null, Font.BOLD, 12, btnDisconnect.getFont());
         if (btnDisconnectFont != null) btnDisconnect.setFont(btnDisconnectFont);
@@ -190,6 +184,8 @@ public class frmMain {
         if (btnRefreshLogFont != null) btnRefreshLog.setFont(btnRefreshLogFont);
         btnRefreshLog.setText("Refresh");
         txData.add(btnRefreshLog, new GridConstraints(3, 4, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_CAN_SHRINK | GridConstraints.SIZEPOLICY_CAN_GROW, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
+        final Spacer spacer2 = new Spacer();
+        txData.add(spacer2, new GridConstraints(2, 2, 1, 1, GridConstraints.ANCHOR_CENTER, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, 1, null, null, null, 0, false));
     }
 
     /**
